@@ -6,4 +6,6 @@ const productController = new ProductsController();
 
 products.post('/', productController.create);
 
+products.get('/', productController.getAll);
+
 export default products;

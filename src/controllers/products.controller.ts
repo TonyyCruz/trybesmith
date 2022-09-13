@@ -7,9 +7,13 @@ export default class ProductsController {
 
   public create = async (req: Request, res: Response) => {
     const newProductData = req.body; 
-    console.log('log de teste, procutos controller');
-    
+
     const result = await this.service.create(newProductData);
     res.status(StatusCodes.CREATED).json(result);
+  };
+
+  public getAll = async (req: Request, res: Response) => {
+    const products = await this.service.getAll();    
+    res.status(StatusCodes.OK).json(products);
   };
 }

@@ -12,4 +12,6 @@ const jwtConfig = {
 
 export default {
   create: (userData: User) => Jwt.sign(userData, SECRET, jwtConfig),
+
+  authentication: (token: string) => Jwt.verify(token, SECRET),
 };

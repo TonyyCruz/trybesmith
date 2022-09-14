@@ -3,11 +3,11 @@ import UserModel from '../models/users.model';
 import User from '../interfaces/user.interface';
 
 export default class UsersClass {
-  public userModel: UserModel;
+  public model: UserModel;
 
   constructor() {
-    this.userModel = new UserModel(connection);
+    this.model = new UserModel(connection);
   }
 
-  public create = async (user: User) => this.userModel.create(user);
+  public create = async (user: User) => this.model.create(user);
 }

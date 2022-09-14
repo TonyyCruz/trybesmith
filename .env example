@@ -2,3 +2,4 @@
 MYSQL_HOST=db
 MYSQL_USER=root
 MYSQL_PASSWORD=password
+JWT_SECRET=senha_para_gerar_o_token

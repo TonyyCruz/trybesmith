@@ -1,4 +1,5 @@
 import { Pool } from 'mysql2/promise';
+import User from '../interfaces/user.interface';
 
 export default class LoginModel {
   connection: Pool;
@@ -7,12 +8,14 @@ export default class LoginModel {
     this.connection = connection;
   }
   
-  public async login(username: string, password: string): Promise<any> {
-    const userData = await this.connection.query(`
+  public async login(username: string, password: string): Promise<User> {
+    const [data] = await this.connection.query(`
     SELECT * FROM Trybesmith.Users
     WHERE Users.username=?
     AND Users.password=?`, [username, password]);
-    console.log(userData);
+    
+    const [userData] = data as User[];
+    
     return userData;
   }
 }

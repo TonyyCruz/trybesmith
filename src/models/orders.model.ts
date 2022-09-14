@@ -14,7 +14,8 @@ export default class OrdersModel {
     FROM Trybesmith.Orders AS ord
     INNER JOIN Trybesmith.Products AS prod
     ON ord.id = prod.orderId
-    GROUP BY id`);
+    GROUP BY id
+    ORDER BY userId ASC`);
     return ordersData as Order[];
   }
 }

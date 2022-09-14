@@ -1,5 +1,5 @@
 import express from 'express';
 
-const login = express.Router();
+const loginRouter = express.Router();
 
-export default login;
+export default loginRouter;

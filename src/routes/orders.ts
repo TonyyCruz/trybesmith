@@ -1,5 +1,5 @@
 import express from 'express';
 
-const orders = express.Router();
+const ordersRouter = express.Router();
 
-export default orders;
+export default ordersRouter;

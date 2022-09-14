@@ -7,8 +7,7 @@ dotenv.config();
 const SECRET = process.env.JWT_SECRET || 'senhaQualquer';
 const jwtConfig = {
   expiresIn: '1d',
-  alg: 'HS256',
-  typ: 'JWT',
+  // algorithm: 'HS256',
 };
 
 export default {

@@ -1,17 +1,19 @@
 import express from 'express';
-import products from './products';
-import login from './login';
-import orders from './orders';
-import users from './users';
+
+//  ==== ROTAS ==== //
+import productsRouter from './products';
+import loginRouter from './login';
+import ordersRouter from './orders';
+import usersRouter from './users';
 
 const routes = express.Router();
 
-routes.use('/products', products);
+routes.use('/products', productsRouter);
 
-routes.use('/login', login);
+routes.use('/login', loginRouter);
 
-routes.use('/orders', orders);
+routes.use('/orders', ordersRouter);
 
-routes.use('/users', users);
+routes.use('/users', usersRouter);
 
 export default routes;

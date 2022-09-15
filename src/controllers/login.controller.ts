@@ -10,13 +10,5 @@ export default class LoginController {
     const token: string = await this.service.login(username, password);
 
     res.status(StatusCodes.OK).json({ token });
-    // try {
-    //   const { username, password } = req.body;
-    //   const token: string = await this.service.login(username, password);
-
-    //   res.status(StatusCodes.OK).json({ token });
-    // } catch (err) {
-    //   next(err);
-    // }
   };
 }

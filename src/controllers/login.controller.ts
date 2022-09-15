@@ -7,6 +7,10 @@ export default class LoginController {
 
   public login = async (req: Request, res: Response) => {
     const { username, password } = req.body;
+
+    if (!username) throw new Error('400 | "username" is required');
+    if (!password) throw new Error('400 | "password" is required');
+
     const token: string = await this.service.login(username, password);
 
     res.status(StatusCodes.OK).json({ token });

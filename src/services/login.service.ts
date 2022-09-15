@@ -11,9 +11,6 @@ export default class LoginService {
   }
 
   public async login(username: string, password: string): Promise<string> {
-    if (!username) throw new Error('400 | "username" is required');
-    if (!password) throw new Error('400 | "password" is required');
-
     const user: User = await this.model.login(username, password);
     if (!user) throw new Error('401 | Username or password invalid');
     

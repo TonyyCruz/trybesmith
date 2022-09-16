@@ -9,4 +9,14 @@ export default class OrdersController {
     const result = await this.service.getAll();
     res.status(StatusCodes.OK).json(result);
   };
+
+  public create = async (req: Request, res: Response) => {
+    const { productsIds } = req.body;
+    const { userId } = res.locals.user;   
+    // console.log('========', { userId, productsIds });
+    
+    await this.service.create(userId, productsIds);
+    
+    res.status(StatusCodes.CREATED).json({ userId, productsIds });
+  };
 }

@@ -13,5 +13,18 @@ const jwtConfig = {
 export default {
   create: (userData: User) => Jwt.sign(userData, SECRET, jwtConfig),
 
-  authentication: (token: string) => Jwt.verify(token, SECRET),
+  authentication: (token: string) => {
+    const decode = Jwt.verify(token, SECRET, (err: any, userData: any) => {
+      if (err) throw new Error('401 | Invalid token');
+      
+      return {
+        userId: userData.id,
+        username: userData.username,
+        classe: userData.classe,
+        level: userData.level,
+      };
+    });
+
+    return decode;
+  },
 };

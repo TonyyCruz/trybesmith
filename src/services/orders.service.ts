@@ -10,4 +10,8 @@ export default class OrdersService {
   }
 
   public getAll = async (): Promise<Order[]> => this.model.getAll();
+
+  public async create(userId: number, productsIds: number[]) {
+    await this.model.create(userId, productsIds);
+  }
 }

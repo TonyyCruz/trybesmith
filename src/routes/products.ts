@@ -7,7 +7,7 @@ const productController = new ProductsController();
 
 productsRouter.post(
   '/',
-  validateMiddleware.products,
+  validateMiddleware.productsCreate,
   productController.create,
 );
 

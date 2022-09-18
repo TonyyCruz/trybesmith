@@ -9,6 +9,7 @@
     "test": "jest",
     "posttest": "ts-node tests/recreateDatabase.ts",
     "restore": "ts-node tests/recreateDatabase.ts",
+    "dbcreate": "ts-node createDatabase.ts",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "keywords": [],

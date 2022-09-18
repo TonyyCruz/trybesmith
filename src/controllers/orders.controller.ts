@@ -12,8 +12,7 @@ export default class OrdersController {
 
   public create = async (req: Request, res: Response) => {
     const { productsIds } = req.body;
-    const { userId } = res.locals.user;   
-    // console.log('========', { userId, productsIds });
+    const { userId } = res.locals.user;
     
     await this.service.create(userId, productsIds);
     

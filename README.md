@@ -67,9 +67,10 @@
 ---
 
 - GET `/orders` para listar todos os pedidos.
+  
+</details>
 
 ---
-      ////////////  ======================  //////////////////
 
 ### 🛠 Tecnologias e Bibliotecas utilizadas no desenvolvimento do projeto
 
@@ -95,7 +96,7 @@ _Pré-requisitos_
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org/en/)
-  - [Mysql](https://www.mysql.com/) para rodar local ou [Docker](https://docs.docker.com/get-docker/) para rodar em container.
+- [Mysql](https://www.mysql.com/) para rodar local ou [Docker](https://docs.docker.com/get-docker/) para rodar em container.
 
 
 É recomendado utilizar algum cliente HTTP, como [Postman](https://www.postman.com/) ou o [Insomnia](https://insomnia.rest/download).

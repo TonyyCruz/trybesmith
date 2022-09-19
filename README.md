@@ -12,6 +12,7 @@
 
 <br>
 
+
 <h2 align="center">Rotas utilizáveis</h2>
 
 <details>
@@ -187,3 +188,12 @@ npm install
 </details>
 
 ---
+
+<details>
+  <summary><strong>🎲 Diagrama Entidade Relacionamento do projeto</strong></summary><br />
+
+  O banco de dados do projeto segue a estrutura abaixo:
+
+  <img src="diagram-der.png" width="200px" >
+</details>
+

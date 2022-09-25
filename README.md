@@ -86,6 +86,8 @@
 - **[Nodemon](https://www.npmjs.com/package/nodemon)**
   
 - **[JWT](https://jwt.io/introduction)**
+
+- **[TypeScript](https://www.typescriptlang.org/pt/)**
   
 
 ---

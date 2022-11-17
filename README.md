@@ -134,7 +134,7 @@ _Rode o serviço `node` com o comando_
 
 _Via CLI use o comando_
 ```jsx
-docker exec -it blogs_api bash
+docker exec -it trybesmith bash
 ```
 - Ele te dará acesso ao terminal interativo do container blogs_api(node) criado pelo compose, que está rodando em segundo plano.
 

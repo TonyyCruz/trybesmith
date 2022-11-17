@@ -136,7 +136,7 @@ _Via CLI use o comando_
 ```jsx
 docker exec -it trybesmith bash
 ```
-- Ele te dará acesso ao terminal interativo do container blogs_api(node) criado pelo compose, que está rodando em segundo plano.
+- Ele te dará acesso ao terminal interativo do container trybesmith criado pelo compose, que está rodando em segundo plano.
 
 _Instale as dependências `dentro do container` com_
 
